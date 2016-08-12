@@ -1,0 +1,57 @@
+doctype html
+html
+
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='description of your site')
+    meta(name='author', content= "author of the site")
+    //- uncomment if your site is responsive!
+    //- meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= _path
+
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title Box personal portfolio Template
+    link(rel='icon', href='img/fav.png', type='image/x-icon')
+    // Bootstrap
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    link(href='ionicons/css/ionicons.min.css', rel='stylesheet')
+    // main css
+    link(href='css/style.css', rel='stylesheet')
+    // modernizr
+    script(src='js/modernizr.js')
+    
+    != css()
+
+  body
+
+    if _path === "/about.html"
+        include layouts/header_about
+
+    if _path === "/services.html"
+        include layouts/header_services
+
+    if _path === "/single-project.html"
+        include layouts/header_port
+
+    if _path === "/portfolio.html"
+        include layouts/header_port
+
+    if _path === "/contact.html"
+        include layouts/header_contact
+
+    block content
+
+    include layouts/footer
+
+    != js()
+
+    // jQuery
+    script(src='js/jquery-2.1.1.js')
+    // plugins
+    script(src='js/bootstrap.min.js')
+    script(src='js/menu.js')
+    script(src='js/animated-headline.js')
+    script(src='js/isotope.pkgd.min.js')
+    // custom script
+    script(src='js/custom.js')

@@ -1,0 +1,56 @@
+extends layout_general
+
+block content
+
+  .top-bar
+      h1 project title
+      p
+        a(href='#') Home
+        |  / 
+        a(href='#') portfolio
+        |  / project title
+    // end top-bar
+    
+  .container.main-container
+        .col-md-12
+          img.img-responsive(src='/img/portfolio.jpg', alt='')
+          .h-30
+        .col-md-12
+          h3.text-uppercase project title
+          h5 Creative & Lorem ipsum dolor sit amet
+          .h-30
+        .col-md-9
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus ultimum cum ultimo sapientiae Et nemo nimium beatus est
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia
+        .col-md-3
+          ul.cat-ul
+            li
+              i.ion-ios-circle-filled
+              |  Design
+            li
+              i.ion-ios-circle-filled
+              |  consectetur adipiscing
+            li
+              i.ion-ios-circle-filled
+              |  et gubernationis
+            li
+              i.ion-ios-circle-filled
+              |  Aliter enim nosmet
+          .h-10
+          h4 Share
+          ul.social-ul
+            li.box-social
+              a(href='#0')
+                i.ion-social-facebook
+            li.box-social
+              a(href='#0')
+                i.ion-social-instagram-outline
+            li.box-social
+              a(href='#0')
+                i.ion-social-twitter
+            li.box-social
+              a(href='#0')
+                i.ion-social-dribbble
+      // end main-container

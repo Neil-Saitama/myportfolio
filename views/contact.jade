@@ -1,0 +1,46 @@
+extends layout_general
+
+block content
+
+    .top-bar
+      h1 contact Me
+      p
+        a(href='#') Home
+        |  / Contact Me
+    // end top bar
+    // main-container
+    .container.main-container
+      .col-md-6
+        form(action='#', method='post')
+          .row
+            .col-md-6
+              .input-contact
+                input(type='text', name='name')
+                span your name
+            .col-md-6
+              .input-contact
+                input(type='text', name='email')
+                span your email
+            .col-md-12
+              .input-contact
+                input(type='text', name='object')
+                span object
+            .col-md-12
+              .textarea-contact
+                textarea(name='message')
+                span message
+            .col-md-12
+              a.btn.btn-box(href='#') Send
+      .col-md-6
+        h3.text-uppercase contact me
+        h5 Love to serve you and make you satisfied.
+        .h-30
+        p
+            | Hello I'm Ephraim Neil Junsan 25 years of age, Philippine based freelance Web Developer / Designer, Clickfunnels Editor and currently working as Front-end Web Developer / Designer at Webfactories Singapore Based. I like to resolve design problems.
+        .contact-info
+          p
+            i.ion-android-call
+            |  +63 9773818856
+          p
+            i.ion-ios-email
+            |  neiljunsan09@gmail.com

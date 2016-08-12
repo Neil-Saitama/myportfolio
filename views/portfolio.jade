@@ -1,0 +1,123 @@
+extends layout_general
+
+block content
+
+  .top-bar
+      h1 portfolio
+      p
+        a(href='#') Home
+        |  / Portfolio 
+        
+    .main-container.portfolio-inner.clearfix
+      // portfolio div
+      .portfolio-div
+        .portfolio
+          // portfolio_filter
+          .categories-grid.wow.fadeInLeft
+            nav.categories.text-center
+              ul.portfolio_filter
+                li
+                  a.active(href='', data-filter='*') All
+                li
+                  a(href='', data-filter='.photography') Photography
+                li
+                  a(href='', data-filter='.logo') Logo
+                li
+                  a(href='', data-filter='.graphics') Graphics
+                li
+                  a(href='', data-filter='.ads') Advertising
+                li
+                  a(href='', data-filter='.fashion') Fashion
+          // portfolio_filter
+          // portfolio_container
+          .no-padding.portfolio_container.clearfix
+            // single work
+            .col-md-4.col-sm-6.fashion.logo
+              a.portfolio_item(href='single-project.html')
+                img.img-responsive(src='http://placehold.it/1000x1000', alt='image')
+                .portfolio_item_hover
+                  .portfolio-border.clearfix
+                    .item_info
+                      span Mockups in seconds
+                      em Fashion / Logo
+            // end single work
+            // single work
+            .col-md-4.col-sm-6.ads.graphics
+              a.portfolio_item(href='single-project.html')
+                img.img-responsive(src='http://placehold.it/1000x1000', alt='image')
+                .portfolio_item_hover
+                  .portfolio-border.clearfix
+                    .item_info
+                      span Floating mockups
+                      em Ads / Graphics
+            // end single work
+            // single work
+            .col-md-4.col-sm-12.photography
+              a.portfolio_item(href='single-project.html')
+                img.img-responsive(src='http://placehold.it/1000x1000', alt='image')
+                .portfolio_item_hover
+                  .portfolio-border.clearfix
+                    .item_info
+                      span Photorealistic smartwatch
+                      em Photography
+            // end single work
+            // single work
+            .col-md-4.col-sm-6.fashion.ads
+              a.portfolio_item(href='single-project.html')
+                img.img-responsive(src='http://placehold.it/1000x1000', alt='image')
+                .portfolio_item_hover
+                  .portfolio-border.clearfix
+                    .item_info
+                      span Held by hands
+                      em Fashion / Ads
+            // end single work
+            // single work
+            .col-md-4.col-sm-6.graphics.ads
+              a.portfolio_item(href='single-project.html')
+                img.img-responsive(src='http://placehold.it/1000x1000', alt='image')
+                .portfolio_item_hover
+                  .portfolio-border.clearfix
+                    .item_info
+                      span Mobile devices
+                      em Graphics / Ads
+            // end single work
+            // single work
+            .col-md-4.col-sm-12.photography
+              a.portfolio_item(href='single-project.html')
+                img.img-responsive(src='http://placehold.it/1000x1000', alt='image')
+                .portfolio_item_hover
+                  .portfolio-border.clearfix
+                    .item_info
+                      span Photorealistic smartwatch
+                      em Photography
+            // end single work
+            // single work
+            .col-md-4.col-sm-6.graphics.ads
+              a.portfolio_item(href='single-project.html')
+                img.img-responsive(src='http://placehold.it/1000x1000', alt='image')
+                .portfolio_item_hover
+                  .portfolio-border.clearfix
+                    .item_info
+                      span Mobile devices
+                      em Graphics / Ads
+            // end single work
+            // single work
+            .col-md-4.col-sm-6.graphics.ads
+              a.portfolio_item(href='single-project.html')
+                img.img-responsive(src='http://placehold.it/1000x1000', alt='image')
+                .portfolio_item_hover
+                  .portfolio-border.clearfix
+                    .item_info
+                      span Mobile devices
+                      em Graphics / Ads
+            // end single work
+            // single work
+            .col-md-4.col-sm-6.graphics.ads
+              a.portfolio_item(href='single-project.html')
+                img.img-responsive(src='http://placehold.it/1000x1000', alt='image')
+                .portfolio_item_hover
+                  .portfolio-border.clearfix
+                    .item_info
+                      span Mobile devices
+                      em Graphics / Ads
+            // end single work
